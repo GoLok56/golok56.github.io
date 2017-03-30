@@ -27,6 +27,7 @@ footer {
     bottom: 0;
     height: 75px;
     width: 100%;
+    clear: both;
 }
 
 .red-box {
@@ -95,12 +96,10 @@ footer {
     width: 235px;
     height: 211px;
     display: inline-block;
-    float: left;
-    margin-left: 10px;
 }
 
-.desktop:first-child{
-    margin-left: 0;
+.desktop:nth-child(2) {
+    margin: 0 25px;
 }
 
 .desktop h2 {
@@ -112,4 +111,12 @@ footer {
     width: 75px;
     height: 75px;
     margin: 10px 85px;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
 }
