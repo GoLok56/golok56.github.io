@@ -22,6 +22,7 @@ h3 {
 /* Bagian header */
 .header {
 	background: #d01313;
+	margin-bottom: 8px;
 	padding: 16px 0;
 }
 
@@ -47,12 +48,18 @@ h3 {
 }
 
 /* Bagian content */
+.content{
+	text-align: center;
+}
+
 .content-container {
 	background: #ffffff;
-	min-height: 103px;
-	margin: 16px auto;
-	padding: 16px;
+	display: inline-block;
+	margin: 8px auto;
 	max-width: 400px;
+	min-height: 103px;
+	padding: 16px;
+	text-align: left;
 }
 
 .content-main {
@@ -100,6 +107,7 @@ h3 {
 /* Bagian footer */
 .footer {
 	background: #d01313;
+	margin-top: 8px;
 	padding: 16px 0;
 }
 
