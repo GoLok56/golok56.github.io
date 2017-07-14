@@ -48,18 +48,14 @@ h3 {
 }
 
 /* Bagian content */
-.content{
-	text-align: center;
-}
 
 .content-container {
 	background: #ffffff;
-	display: inline-block;
 	margin: 8px auto;
 	max-width: 400px;
 	min-height: 103px;
 	padding: 16px;
-	text-align: left;
+	position: relative;
 }
 
 .content-main {
