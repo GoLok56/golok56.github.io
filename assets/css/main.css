@@ -22,7 +22,6 @@ h3 {
 /* Bagian header */
 .header {
 	background: #d01313;
-	margin-bottom: 8px;
 	padding: 16px 0;
 }
 
@@ -51,7 +50,7 @@ h3 {
 
 .content-container {
 	background: #ffffff;
-	margin: 8px auto;
+	margin: 16px auto;
 	max-width: 400px;
 	min-height: 103px;
 	padding: 16px;
@@ -103,7 +102,6 @@ h3 {
 /* Bagian footer */
 .footer {
 	background: #d01313;
-	margin-top: 8px;
 	padding: 16px 0;
 }
 
