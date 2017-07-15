@@ -30,6 +30,8 @@ h3 {
 /* Bagian header */
 .header {
 	background: #fb2b20;
+	box-sizing: border-box;
+	min-height: 85px;
 	padding: 16px 0;
 }
 
@@ -60,11 +62,11 @@ h3 {
 	bottom: 0;
 	display: flex;
 	flex-direction: column;
-	left: -320px;
+	left: -300px;
 	position: fixed;
 	top: 0;
 	transition: all 0.4s;
-	width: 320px;
+	width: 300px;
 	z-index: 2;
 }
 
@@ -74,8 +76,9 @@ h3 {
 
 .navbar-header {
 	background: #fb2b20;
+	box-sizing: border-box;
 	color: #ffffff;
-	min-height: 53px;
+	min-height: 85px;
 	padding: 16px;
 }
 

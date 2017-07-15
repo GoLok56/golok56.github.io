@@ -8,7 +8,7 @@ navbarDrawer.addEventListener("click", function(){
     var backgroundElement = document.getElementsByClassName("background");
 
     if(!navbarIsOpen){
-        var transform = "translate(320px, 0)";
+        var transform = "translate(300px, 0)";
 
         /* Menampilkan element navbar */
         navbarDrawer.style.transform = transform;
