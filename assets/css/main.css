@@ -1,13 +1,21 @@
 * {
 	margin: 0;
 	padding: 0;
+	-webkit-transition: 0.4s -webkit-filter linear;
+	-moz-transition: 0.4s -moz-filter linear;
+	-moz-transition: 0.4s filter linear;
+	-ms-transition: 0.4s -ms-filter linear;
+	-o-transition: 0.4s -o-filter linear;
+	transition: 0.4s filter linear, 0.4s -webkit-filter linear;
 }
 
 body {
 	background-color: #f0f0f0;
+	font-family: "Segoe UI", "Frutiger", "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 }
 
-h1 {
+h1,
+.navbar-item a {
 	font-size: 25px;
 }
 
@@ -21,7 +29,7 @@ h3 {
 
 /* Bagian header */
 .header {
-	background: #d01313;
+	background: #fb2b20;
 	padding: 16px 0;
 }
 
@@ -32,6 +40,7 @@ h3 {
 
 .navbar-drawer {
 	margin: 8px 16px;
+	transition: all 0.4s;
 }
 
 .header-title {
@@ -46,8 +55,60 @@ h3 {
 	width: 20px;
 }
 
-/* Bagian content */
+/* Bagian navbar */
+.navbar {
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	left: -320px;
+	position: fixed;
+	top: 0;
+	transition: all 0.4s;
+	width: 320px;
+	z-index: 2;
+}
 
+.navbar .navbar-open {
+	left: 0;
+}
+
+.navbar-header {
+	background: #fb2b20;
+	color: #ffffff;
+	min-height: 53px;
+	padding: 16px;
+}
+
+.navbar-content {
+	background: #ffffff;
+	flex-grow: 1;
+}
+
+.navbar-list {
+	text-decoration: none;
+}
+
+.navbar-item {
+	border-bottom: 1px solid #fc6203;
+	padding: 16px;
+	transition: all 0.3s;
+}
+
+.navbar-item:hover {
+	cursor: pointer;
+}
+
+.navbar-item:active,
+.navbar-item:hover {
+	background: #fc6203;
+	color: #ffffff;
+}
+
+.navbar-item a {
+	color: #000000 !important;
+}
+
+/* Bagian content */
 .content-container {
 	background: #ffffff;
 	margin: 16px auto;
@@ -62,7 +123,7 @@ h3 {
 }
 
 .content-title-divider {
-	background: #d01313;
+	background: #fc6203;
 	display: block;
 	height: 2px;
 	margin-bottom: 16px;
@@ -82,26 +143,28 @@ h3 {
 }
 
 .btn-link {
+	background: #ebc626;
+	box-sizing: border-box;
 	border-radius: 5px;
-	color: #d01313;
 	font-size: 12px;
 	height: 36px;
 	margin-top: 8px;
-	transition: background 0.6s, color 0.6s;
+	transition: all 0.3s;
 	text-align: center;
 	line-height: 36px;
-	text-decoration: none;
 	width: 70px;
 }
 
+.btn-link:active,
 .btn-link:hover {
-	background: #d01313;
-	color: #ffffff;
+	background: #ffffff;
+	border: 1px solid #ebc626;
+	color: #ebc626;
 }
 
 /* Bagian footer */
 .footer {
-	background: #d01313;
+	background: #fb2b20;
 	padding: 16px 0;
 }
 
@@ -139,6 +202,19 @@ h3 {
 .header,
 .footer {
 	width: 100%;
+}
+
+.blur {
+	-webkit-filter: blur(4px);
+    -ms-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -o-filter: blur(4px);
+    filter: blur(4px);
+}
+
+.link {
+	color: #ffffff;
+	text-decoration: none;
 }
 
 #navbar-drawer {
