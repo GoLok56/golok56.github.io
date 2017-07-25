@@ -150,9 +150,16 @@ h3 {
 .btn {
 	border: 1px solid #ffffff;
 	border-radius: 15px;
+	color: #ffffff;
 	padding: 12px;
 	text-decoration: none;
-	color: #ffffff;
+	transition: all 0.4s;
+}
+
+.btn:active {
+	border: 1px solid #ebc626;
+	background: #ffffff;
+	color: #ebc626;
 }
 
 .wrapper {
