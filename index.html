@@ -1,273 +1,98 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
-        <link type="text/css" rel="stylesheet" href="css/styles.css"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Portofolio SAP</title>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/css-reset.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Satria Adi Putra</title>
+</head>
+<body>
+    <main class="wrapper">
+        <section class="flex-container row">
+            <img id="profpic" src="assets/images/me.jpeg"></img>
+            
+            <article class="flex-container column" id="about-section">
+                <h2>ABOUT ME</h2>
+                <p>My name is Satria Adi Putra. An android developer and sometime a backend developer 
+                   using ExpressJS. Currently an android developer at Unikom Codelabs.</p>
+            </article>
+        </section>
 
-    <body>
-        <nav class="red darken-1">
-            <div class="nav-wrapper container">
-                <a href="#" class="brand-logo">Satria Adi Putra</a>
-            </div>
-        </nav>
+        <section class="flex-container column" id="portofolio">
+            <h2>WHAT I'VE CREATED</h2>
 
-        <div class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col l2 m4 s12">
-                        <img class="responsive-img" src="assets/images/me.jpeg"/>
+            <h3>Android</h3>
+            <article class="flex-container row">
+                <article class="card">
+                    <h4>Manajemen Uang</h4>
+                    <p>
+                        An android app that make it easier to keep track your incomes and expenses each 
+                        day.
+                    </p>
+
+                    <div class="card-action">
+                        <a href="https://github.com/GoLok56/ManajemenUang">Github</a>
+                        <a href="#">Get APK</a>
                     </div>
-                    <div class="col l10 m8 s12">
-                        <p class="flow-text">
-                            My name is Satria Adi Putra. An android developer and sometime a backend
-                            developer using ExpressJS. Currently an android developer at Unikom Codelabs.
-                        </p>
+                </article>
+
+                <article class="card">
+                    <h4>Aplikasi Absen</h4>
+                    <p>
+                        It was created for an organization from my school. Simple digitalization of 
+                        attendance check. So no more wasting paper.
+                    </p>
+
+                    <div class="card-action">
+                        <a href="https://github.com/GoLok56/AbsenPelatih">Github</a>
+                        <a href="#">Get APK</a>
                     </div>
-                </div>
-            </div>
+                </article>
+            </article>
+
+            <h3>Java Swing</h3>
+            <article class="flex-container row">
+                <article class="card">
+                    <h4>Manajemen Uang</h4>
+                    <p>
+                        Desktop version of the Manajemen Uang. Built using Java Swing. Only have limited
+                        features.
+                    </p>
+
+                    <div class="card-action">
+                        <a href="https://github.com/GoLok56/Manajemen-Uang">Github</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h4>Apotek</h4>
+                    <p>
+                        It was a project for my final assignment in college's object oriented
+                        programming. For pharmacy business.
+                    </p>
+
+                    <div class="card-action">
+                        <a href="https://github.com/GoLok56/Tubes-PBO">Github</a>
+                    </div>
+                </article>
+            </article>
+        </section>
+
+        <section id="contact-section">
+            <h2>CONTACT ME</h2>
+            <p><img src="assets/images/whatsapp-logo.png" />+62 857 7043 1325</p>
+            <p><img src="assets/images/at.png" />satadii11@gmail.com</p>            
+            <p><img src="assets/images/steam-logo.png" />golok56</p>            
+        </section>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <span class='copyright'>&#169; Satria Adi Putra 2018</span>
         </div>
-
-        <div class="section">
-            <div class="container">
-                <h3>What i've created</h3>
-            </div>
-        </div>
-
-        <div class="section hide-on-small-and-down">
-            <div class="container">
-                <div class="row">
-                    <div class="col m4">
-                        <h5>Android</h5>
-                    </div>
-                    <div class="col m4">
-                        <h5>Java Swing</h5>
-                    </div>
-                    <div class="col m4">
-                        <h5>Others</h5>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col m4">
-                        <div class="card">
-                            <div class="card-content">
-                                <span class="card-title">Manajemen Uang</span>
-                                An android app that make it easier to keep track your incomes and expenses each
-                                day.
-                            </div>
-                            <div class="card-action">
-                                <a href="https://github.com/GoLok56/ManajemenUang">Github</a>
-                                <a href="#">Get APK</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col m4">
-                        <div class="card">
-                            <div class="card-content">
-                                <span class="card-title">Manajemen Uang</span>
-                                Desktop version of the Manajemen Uang. Built using Java Swing. Only have limited
-                                features.
-                            </div>
-                            <div class="card-action">
-                                <a href="https://github.com/GoLok56/Manajemen-Uang">Github</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col m4">
-                        <div class="card">
-                            <div class="card-content">
-                                <span class="card-title">Apotek</span>
-                                A CLI application for pharmacy business. Written in pascal. A final assignment
-                                for algorithm class.
-                            </div>
-                            <div class="card-action">
-                                <a href="https://github.com/GoLok56/Tugas-Besar">Github</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col m4">
-                        <div class="card">
-                            <div class="card-content">
-                                <span class="card-title">Aplikasi Absen</span>
-                                It was created for an organization from my school. Simple digitalization of
-                                attendance check. So no more wasting paper.
-                            </div>
-                            <div class="card-action">
-                                <a href="https://github.com/GoLok56/AbsenPelatih">Github</a>
-                                <a href="#">Get APK</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col m4">
-                        <div class="card">
-                            <div class="card-content">
-                                <span class="card-title">Apotek</span>
-                                It was a project for my final assignment in college's object oriented
-                                programming. For pharmacy business.
-                            </div>
-                            <div class="card-action">
-                                <a href="https://github.com/GoLok56/Tubes-PBO">Github</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col m4">
-                        <div class="card">
-                            <div class="card-content">
-                                <span class="card-title">User API</span>
-                                A simple user CRUD using ExpressJS. A simple project i took to practice NodeJS
-                                and MongoDB.
-                            </div>
-                            <div class="card-action">
-                                <a href="https://github.com/GoLok56/node_api">Github</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="section hide-on-med-and-up">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12">
-                        <h5>Android</h5>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col s12">
-                        <div class="card">
-                            <div class="card-content">
-                                <span class="card-title">Manajemen Uang</span>
-                                An android app that make it easier to keep track your incomes and expenses each
-                                day.
-                            </div>
-                            <div class="card-action">
-                                <a href="https://github.com/GoLok56/ManajemenUang">Github</a>
-                                <a href="#">Get APK</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col s12">
-                        <div class="card">
-                            <div class="card-content">
-                                <span class="card-title">Aplikasi Absen</span>
-                                It was created for an organization from my school. Simple digitalization of
-                                attendance check. So no more wasting paper.
-                            </div>
-                            <div class="card-action">
-                                <a href="https://github.com/GoLok56/AbsenPelatih">Github</a>
-                                <a href="#">Get APK</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col s12">
-                        <h5>Java Swing</h5>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col s12">
-                        <div class="card">
-                            <div class="card-content">
-                                <span class="card-title">Manajemen Uang</span>
-                                Desktop version of the Manajemen Uang. Built using Java Swing. Only have limited
-                                features.
-                            </div>
-                            <div class="card-action">
-                                <a href="https://github.com/GoLok56/Manajemen-Uang">Github</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col s12">
-                        <div class="card">
-                            <div class="card-content">
-                                <span class="card-title">Apotek</span>
-                                It was a project for my final assignment in college's object oriented
-                                programming. For pharmacy business.
-                            </div>
-                            <div class="card-action">
-                                <a href="https://github.com/GoLok56/Tubes-PBO">Github</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col s12">
-                        <h5>Others</h5>
-                    </div>
-                </div>
-
-                <div class="col s12">
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title">User API</span>
-                            A simple user CRUD using ExpressJS. A simple project i took to practice NodeJS
-                            and MongoDB.
-                        </div>
-                        <div class="card-action">
-                            <a href="https://github.com/GoLok56/node_api">Github</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col s12">
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title">Apotek</span>
-                            A CLI application for pharmacy business. Written in pascal. A final assignment
-                            for algorithm class.
-                        </div>
-                        <div class="card-action">
-                            <a href="https://github.com/GoLok56/Tugas-Besar">Github</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <footer class="page-footer red darken-1">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12">
-                        <h5>Find Me On</h5>
-                        <ul>
-                            <li>
-                                <a class="white-text" href="https://www.linkedin.com/in/satria-adi-putra-853306156/">LinkedIn</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container">
-                    <span class="white-text">&#169; Satria Adi Putra 2018</span>
-                </div>
-            </div>
-        </footer>
-
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="js/materialize.min.js"></script>
-    </body>
+    </footer>
+</body>
 </html>
