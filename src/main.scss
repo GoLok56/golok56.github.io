@@ -1,0 +1,146 @@
+$RED : #E53935;
+$BORDER_COLOR: #f0f0f0;
+$STD_PARENT_CHILD_PADDING : 24px;
+$STD_MARGIN_BETWEEN_ELEMENT : 16px;
+$HEADER_BORDER_COLOR : $RED;
+$FOOTER_BACKGROUND_COLOR: #f0f0f0;
+
+section {
+  width: 100%;
+  padding: $STD_PARENT_CHILD_PADDING;
+}
+
+h2 {
+  display: table;
+  border-bottom: 1px solid $HEADER_BORDER_COLOR;
+  padding-bottom: 8px;
+}
+
+footer {
+  background: $FOOTER_BACKGROUND_COLOR;
+  padding: $STD_PARENT_CHILD_PADDING;
+
+  span {
+    font-size: 12px;
+  }
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;  
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.card {
+  border: 1px solid $BORDER_COLOR;
+  box-sizing: border-box;
+  margin-right: $STD_MARGIN_BETWEEN_ELEMENT;
+  flex: 1;
+  background: white;
+
+  h4 {
+    margin-top: $STD_PARENT_CHILD_PADDING;
+    margin-bottom: $STD_MARGIN_BETWEEN_ELEMENT;
+    margin-right: $STD_PARENT_CHILD_PADDING;  
+    margin-left: $STD_PARENT_CHILD_PADDING;    
+  }
+
+  p {
+    margin-left: $STD_PARENT_CHILD_PADDING;
+    margin-right: $STD_PARENT_CHILD_PADDING;  
+  }
+
+  .card-action {
+    border-top: 1px solid $BORDER_COLOR;
+    margin-top: $STD_MARGIN_BETWEEN_ELEMENT;
+    padding-left: $STD_PARENT_CHILD_PADDING;
+    padding-top: $STD_MARGIN_BETWEEN_ELEMENT;
+    padding-bottom: $STD_MARGIN_BETWEEN_ELEMENT;
+
+    a {
+      color: $RED;
+      text-decoration: none;
+    }
+
+    a:nth-child(2) {
+      margin-left: $STD_MARGIN_BETWEEN_ELEMENT;
+    }
+  }
+}
+
+.card:last-child {
+  margin-right: 0px;
+}
+
+#profpic {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+}
+
+#about-section {
+  margin-left: $STD_PARENT_CHILD_PADDING;
+  
+  p {
+    margin-top: $STD_MARGIN_BETWEEN_ELEMENT;
+  }
+}
+
+#portofolio {
+  h2 {
+    margin-bottom: $STD_PARENT_CHILD_PADDING;
+  }
+
+  h3 {
+    margin-bottom: $STD_MARGIN_BETWEEN_ELEMENT;
+  }
+
+  h3:last-of-type {
+    margin-top: $STD_MARGIN_BETWEEN_ELEMENT;
+  }
+}
+
+#contact-section {
+  h2 {
+    margin-bottom: $STD_PARENT_CHILD_PADDING;
+  }
+
+  p {
+    margin-bottom: $STD_MARGIN_BETWEEN_ELEMENT;
+
+    img {
+      margin-right: 8px;
+    }
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .card {
+    margin-top: $STD_MARGIN_BETWEEN_ELEMENT;
+  }
+
+  #profpic {
+    margin: 0 auto;
+  }
+
+  #about-section {
+    margin-top: $STD_MARGIN_BETWEEN_ELEMENT;
+    margin-left: 0px;
+  }
+}
