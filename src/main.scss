@@ -25,7 +25,7 @@ footer {
 }
 
 .wrapper {
-  width: 80%;
+  max-width: 80%;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -75,6 +75,10 @@ footer {
 
     a:nth-child(2) {
       margin-left: $STD_MARGIN_BETWEEN_ELEMENT;
+    }
+
+    a:hover {
+      opacity: 0.5;
     }
   }
 }
@@ -132,6 +136,7 @@ footer {
 
   .card {
     margin-top: $STD_MARGIN_BETWEEN_ELEMENT;
+    margin-right: 0px;
   }
 
   #profpic {
