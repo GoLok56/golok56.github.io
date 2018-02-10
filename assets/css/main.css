@@ -51,6 +51,8 @@ footer {
       text-decoration: none; }
     .card .card-action a:nth-child(2) {
       margin-left: 16px; }
+    .card .card-action a:hover {
+      opacity: 0.5; }
 
 .card:last-child {
   margin-right: 0px; }
