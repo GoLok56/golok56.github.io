@@ -1,150 +1,295 @@
-$RED : #E53935;
-$BORDER_COLOR: #f0f0f0;
-$STD_PARENT_CHILD_PADDING : 24px;
-$STD_MARGIN_BETWEEN_ELEMENT : 16px;
-$HEADER_BORDER_COLOR : $RED;
-$FOOTER_BACKGROUND_COLOR: #f0f0f0;
+$PRIMARY_COLOR: #BB1F1F;
+$PRIMARY_TITLE: 42px;
+$SECTION_TITLE: 30px;
+$PRODUCT_TITLE: 24px;
+$SCREEN_PADDING: 85px;
+$VERTICAL_PADDING: 24px;
+$IMAGE_SIZE: 100px;
+$SOCIAL_IMAGE_SIZE: 48px;
 
-section {
-  padding: $STD_PARENT_CHILD_PADDING;
+html, body {
+  height: 100vh;
+  max-height: 100vh;
+  font-family: Rubik, 'Segoe UI', sans-serif;
+}
+
+body {
+  display: flex;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: $PRIMARY_TITLE;
 }
 
 h2 {
-  display: table;
-  border-bottom: 1px solid $HEADER_BORDER_COLOR;
-  padding-bottom: 8px;
+  font-size: $SECTION_TITLE;
+  text-transform: uppercase;
 }
 
-footer {
-  background: $FOOTER_BACKGROUND_COLOR;
-  padding: $STD_PARENT_CHILD_PADDING;
-
-  span {
-    font-size: 12px;
-  }
+h3 {
+  font-size: $PRODUCT_TITLE;
+  letter-spacing: 0.1em;
 }
 
-.wrapper {
-  max-width: 80%;
-  margin: 0 auto;
+.profile, .content {
   box-sizing: border-box;
 }
 
-.flex-container {
-  display: flex;  
-}
+.profile {
+  background: $PRIMARY_COLOR;
+  width: 40%;
+  max-width: 40%;
+  position: fixed;
+  height: 100%;
+  color: white;
+  display: flex;
+  padding-right: $SCREEN_PADDING;
+  padding-left: $SCREEN_PADDING;
 
-.row {
-  flex-direction: row;
-}
-
-.column {
-  flex-direction: column;
-}
-
-.card {
-  border: 1px solid $BORDER_COLOR;
-  box-sizing: border-box;
-  margin-right: $STD_MARGIN_BETWEEN_ELEMENT;
-  flex: 1;
-  background: white;
-
-  h4 {
-    margin-top: $STD_PARENT_CHILD_PADDING;
-    margin-bottom: $STD_MARGIN_BETWEEN_ELEMENT;
-    margin-right: $STD_PARENT_CHILD_PADDING;  
-    margin-left: $STD_PARENT_CHILD_PADDING;    
+  div {
+    margin: auto;
   }
 
-  p {
-    margin-left: $STD_PARENT_CHILD_PADDING;
-    margin-right: $STD_PARENT_CHILD_PADDING;  
+  h1 {
+    letter-spacing: 0.05em;
   }
 
-  .card-action {
-    border-top: 1px solid $BORDER_COLOR;
-    margin-top: $STD_MARGIN_BETWEEN_ELEMENT;
-    padding-left: $STD_PARENT_CHILD_PADDING;
-    padding-top: $STD_MARGIN_BETWEEN_ELEMENT;
-    padding-bottom: $STD_MARGIN_BETWEEN_ELEMENT;
+  .subtitle {
+    letter-spacing: 0.2em;
+    font-size: 24px;
+    margin-top: 8px;
+  }
 
-    a {
-      color: $RED;
-      text-decoration: none;
+  .description {
+    line-height: 36px;
+    font-size: 24px;
+    margin-top: 32px;
+  }
+
+  a {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    line-height: 36px;
+    color: $PRIMARY_COLOR;
+    text-decoration: none;
+    background-color: white;
+    padding: 15px;
+    margin-top: 54px + 15px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+}
+
+.content {
+  padding-right: $SCREEN_PADDING;
+  padding-left: $SCREEN_PADDING;
+  margin-left: 40%;
+
+  div {
+    margin: auto;
+  }
+
+  .project {
+    margin-top: $VERTICAL_PADDING;
+
+    .product {
+      display: flex;
+      margin-top: 16px;
+
+      .product-image {
+        width: $IMAGE_SIZE;
+        height: $IMAGE_SIZE;
+      }
+
+      .description {
+        margin-left: 32px;
+      }
+
+      p {
+        font-size: 14px;
+        margin-top: 8px;
+        line-height: 27px;
+      }
     }
+  }
 
-    a:nth-child(2) {
-      margin-left: $STD_MARGIN_BETWEEN_ELEMENT;
-    }
+  .contact {
+    margin-top: 32px;
+    margin-bottom: $VERTICAL_PADDING;
 
-    a:hover {
-      opacity: 0.5;
+    .social {
+      margin-top: 24px;
+      display: flex;
+      
+      img {
+        width: $SOCIAL_IMAGE_SIZE;
+        height: $SOCIAL_IMAGE_SIZE;
+        margin-left: 42px;
+      }
     }
   }
 }
 
-.card:last-child {
-  margin-right: 0px;
-}
-
-#profpic {
-  width: 135px;
-  height: 135px;
-  border-radius: 50%;
-}
-
-#about-section {
-  margin-left: $STD_PARENT_CHILD_PADDING;
-  
-  p {
-    margin-top: $STD_MARGIN_BETWEEN_ELEMENT;
+@media only screen and (max-width: 1155px) {
+  h1 {
+    font-size: 30px;
   }
-}
 
-#portofolio {
   h2 {
-    margin-bottom: $STD_PARENT_CHILD_PADDING;
+    font-size: 24px;
   }
 
   h3 {
-    margin-bottom: $STD_MARGIN_BETWEEN_ELEMENT;
+    font-size: 18px;
   }
 
-  h3:last-of-type {
-    margin-top: $STD_MARGIN_BETWEEN_ELEMENT;
+  .profile {
+    padding-right: 60px;
+    padding-left: 60px;
+
+    a {
+      padding: 12px;
+    }
+
+    .subtitle, .description, a {
+      font-size: 18px;
+    }
   }
-}
 
-#contact-section {
-  h2 {
-    margin-bottom: $STD_PARENT_CHILD_PADDING;
-  }
+  .content {
+    padding-right: 60px;
+    padding-left: 60px;
 
-  p {
-    margin-bottom: $STD_MARGIN_BETWEEN_ELEMENT;
+    .project {
+      .product {
+        .product-image {
+          width: 72px;
+          height: 72px;
+        }
+      }
+    }
 
-    img {
-      margin-right: 8px;
+    .contact {
+      .social {
+        img {
+          width: 32px;
+          height: 32px;
+        }
+      }
     }
   }
 }
 
-@media only screen and (max-width: 670px) {
-  .row {
-    flex-direction: column;
+@media only screen and (max-width: 838px) {
+  h1 {
+    font-size: 24px;
   }
 
-  .card {
-    margin-top: $STD_MARGIN_BETWEEN_ELEMENT;
-    margin-right: 0px;
+  h2 {
+    font-size: 18px;
   }
 
-  #profpic {
-    margin: 0 auto;
+  h3 {
+    font-size: 16px;
   }
 
-  #about-section {
-    margin-top: $STD_MARGIN_BETWEEN_ELEMENT;
+  .profile {
+    padding-right: 32px;
+    padding-left: 32px;
+
+    a {
+      padding: 8px;
+    }
+
+    .subtitle, .description, a {
+      font-size: 16px;
+    }
+  }
+
+  .content {
+    padding-right: 32px;
+    padding-left: 32px;
+
+    .project {
+      .product {
+        .product-image {
+          width: 48px;
+          height: 48px;
+        }
+      }
+    }
+
+    .contact {
+      .social {
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 684px) {
+  h1 {
+    font-size: $PRIMARY_TITLE;
+  }
+
+  h2 {
+    font-size: $SECTION_TITLE;
+  }
+
+  h3 {
+    font-size: $PRODUCT_TITLE;
+  }
+
+  body {
+    display: block;
+  }
+
+  .profile {
+    position: static;
+    width: 100%;
+    max-width: 100%;
+    padding-right: 32px;
+    padding-left: 32px;
+
+    a {
+      padding: 15px;
+    }
+
+    .subtitle, .description, a {
+      font-size: 24px;
+    }
+  }
+
+  .content {
     margin-left: 0px;
+    padding-right: 32px;
+    padding-left: 32px;
+
+    .project {
+      .product {
+        .product-image {
+          width: 72px;
+          height: 72px;
+        }
+      }
+    }
+
+    .contact {
+      .social {
+        img {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
   }
 }

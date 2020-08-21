@@ -1,98 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/css-reset.css">
-    <link rel="stylesheet" href="assets/css/typography.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <title>Satria Adi Putra</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/css-reset.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Satria Adi Putra</title>
 </head>
+
 <body>
-    <main class="wrapper">
-        <section class="flex-container row">
-            <img id="profpic" src="assets/images/me.jpeg"></img>
-            
-            <article class="flex-container column" id="about-section">
-                <h2>ABOUT ME</h2>
-                <p>My name is Satria Adi Putra. An android developer and sometime a backend developer 
-                   using ExpressJS. Currently an android developer at Unikom Codelabs.</p>
-            </article>
-        </section>
+  <section class="profile">
+    <div>
+      <h1>Hi, I'm Satria</h1>
+      <p class="subtitle">Android Developer</p>
+      <p class="description">A programmer who loves to write clean and tested code.</p>
+      <a href="https://drive.google.com/file/d/1gutA-YrqUN4SLVPrFtBWinjrZFqZvVLB/view?usp=sharing" target="_blank">See My Resume</a>
+    </div>
+  </section>
 
-        <section class="flex-container column" id="portofolio">
-            <h2>WHAT I'VE CREATED</h2>
+  <section class="content">
+    <div>
+      <div class="project">
+        <h2>What I've Built</h2>
 
-            <h3>Android</h3>
-            <article class="flex-container row">
-                <article class="card">
-                    <h4>Manajemen Uang</h4>
-                    <p>
-                        An android app that make it easier to keep track your incomes and expenses each 
-                        day.
-                    </p>
+        <div class="product" style="margin-top: 24px;">
+          <img class="product-image" src="assets/images/unikom-apps.png" alt="Logo Unikom Apps" />
+          <div class="description">
+            <h3>Unikom Apps</h3>
+            <p>Unikom Apps helps students get information about campus such as vision, class schedule, latest articles, etc. 
 
-                    <div class="card-action">
-                        <a href="https://github.com/GoLok56/ManajemenUang">Github</a>
-                        <a href="#">Get APK</a>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <h4>Aplikasi Absen</h4>
-                    <p>
-                        It was created for an organization from my school. Simple digitalization of 
-                        attendance check. So no more wasting paper.
-                    </p>
-
-                    <div class="card-action">
-                        <a href="https://github.com/GoLok56/AbsenPelatih">Github</a>
-                        <a href="#">Get APK</a>
-                    </div>
-                </article>
-            </article>
-
-            <h3>Java Swing</h3>
-            <article class="flex-container row">
-                <article class="card">
-                    <h4>Manajemen Uang</h4>
-                    <p>
-                        Desktop version of the Manajemen Uang. Built using Java Swing. Only have limited
-                        features.
-                    </p>
-
-                    <div class="card-action">
-                        <a href="https://github.com/GoLok56/Manajemen-Uang">Github</a>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <h4>Apotek</h4>
-                    <p>
-                        It was a project for my final assignment in college's object oriented
-                        programming. For pharmacy business.
-                    </p>
-
-                    <div class="card-action">
-                        <a href="https://github.com/GoLok56/Tubes-PBO">Github</a>
-                    </div>
-                </article>
-            </article>
-        </section>
-
-        <section id="contact-section">
-            <h2>CONTACT ME</h2>
-            <p><img src="assets/images/whatsapp-logo.png" />+62 857 7043 1325</p>
-            <p><img src="assets/images/at.png" />satadii11@gmail.com</p>            
-            <p><img src="assets/images/steam-logo.png" />golok56</p>            
-        </section>
-    </main>
-
-    <footer>
-        <div class="wrapper">
-            <span class='copyright'>&#169; Satria Adi Putra 2018</span>
+            </br> </br> In this project, I wrote kotlin code by implementing Clean Architecture and dynamic feature module. The code is well-tested. I also implemented Artificial Neural Netrowk for providing Named Entity Recognition model to be used in chatbot of Unikom Apps.</p>
+          </div>
         </div>
-    </footer>
+
+        <div class="product">
+          <img class="product-image" src="assets/images/pilkadangu.png" alt="Logo Pilkadangu" />
+          <div class="description">
+            <h3>Pilkadangu</h3>
+            <p>Apps for providing information on West Java Election in 2018 for the deaf.
+
+            </br> </br>I led the team consisting of 4 peoples building Pilkadangu and won 2nd place in KPU Apps Challenge 2018. I also awarded as Finalist of COMPFEST X - Chatbot Invasion held by University of Indonesia</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <img class="product-image" src="assets/images/navigasee.png" alt="Logo Navigasee" />
+          <div class="description">
+            <h3>Navigasee</h3>
+            <p>Apps for helping the blind to use public transportation.
+
+            </br> </br>As the leader of the team, I achieved 2nd place in C-Gen CoCreation in 2018. I wrote a scientific paper for this application and awarded as finalist of Gemastik XII.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact">
+        <h2>Contact Me On</h2>
+
+        <div class="social">
+          <a href="mailto:satadii11@gmail.com" target="_blank"><img src="assets/images/mail.png" alt="Email Me" style="margin-left: 0px;"></a>
+          <a href="https://github.com/golok56" target="_blank"><img src="assets/images/github.png" alt="My Github Account"></a>
+          <a href="https://medium.com/@satadii11" target="_blank"><img src="assets/images/medium.png" alt="My Blog"></a>
+          <a href="https://www.linkedin.com/in/satadii11" target="_blank"><img src="assets/images/linkedin.png" alt="My LinkedIn Account"></a>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>
